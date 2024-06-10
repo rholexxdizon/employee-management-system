@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +78,12 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +118,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Assets\total_employee_60px.png" />
+    <None Include="Assets\user_groups_50px.png" />
+    <None Include="Assets\total_60px.png" />
     <None Include="Assets\shutdown_30px.png" />
     <None Include="Assets\money_circulation_30px.png" />
     <None Include="Assets\paycheque_30px.png" />
@@ -107,6 +128,10 @@
     <None Include="Assets\administrator_male_100px.png" />
     <None Include="Assets\dashboard_30px.png" />
     <None Include="Assets\employee_30px.png" />
+    <None Include="Assets\active_30px.png" />
+    <None Include="Assets\inactive_30px.png" />
+    <None Include="Assets\active_employee_60PX.png" />
+    <None Include="Assets\inactive_60px.png" />
     <Content Include="Assets\manager.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

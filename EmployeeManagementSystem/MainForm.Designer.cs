@@ -33,12 +33,13 @@
             this.close = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.signOut = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.signOut = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,6 +105,27 @@
             this.label2.Size = new System.Drawing.Size(93, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Welcome, user";
+            // 
+            // signOut
+            // 
+            this.signOut.AutoSize = true;
+            this.signOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.signOut.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signOut.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.signOut.Location = new System.Drawing.Point(59, 528);
+            this.signOut.Name = "signOut";
+            this.signOut.Size = new System.Drawing.Size(53, 14);
+            this.signOut.TabIndex = 5;
+            this.signOut.Text = "Sign out";
+            this.signOut.Click += new System.EventHandler(this.signOut_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(225, 35);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(875, 565);
+            this.panel3.TabIndex = 1;
             // 
             // button4
             // 
@@ -176,25 +198,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // signOut
-            // 
-            this.signOut.AutoSize = true;
-            this.signOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.signOut.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signOut.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.signOut.Location = new System.Drawing.Point(59, 528);
-            this.signOut.Name = "signOut";
-            this.signOut.Size = new System.Drawing.Size(53, 14);
-            this.signOut.TabIndex = 5;
-            this.signOut.Text = "Sign out";
-            this.signOut.Click += new System.EventHandler(this.signOut_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(1100, 600);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -225,5 +235,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label signOut;
+        private System.Windows.Forms.Panel panel3;
     }
 }
