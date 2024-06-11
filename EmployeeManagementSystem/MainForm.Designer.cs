@@ -143,6 +143,7 @@
             this.addEmployeeButton.TabIndex = 3;
             this.addEmployeeButton.Text = "ADD EMPLOYEE";
             this.addEmployeeButton.UseVisualStyleBackColor = false;
+            this.addEmployeeButton.Click += new System.EventHandler(this.addEmployeeButton_Click);
             // 
             // salaryButton
             // 
@@ -160,6 +161,7 @@
             this.salaryButton.TabIndex = 4;
             this.salaryButton.Text = "SALARY";
             this.salaryButton.UseVisualStyleBackColor = false;
+            this.salaryButton.Click += new System.EventHandler(this.salaryButton_Click);
             // 
             // dashboardButton
             // 
@@ -177,6 +179,7 @@
             this.dashboardButton.TabIndex = 2;
             this.dashboardButton.Text = "DASHBOARD";
             this.dashboardButton.UseVisualStyleBackColor = false;
+            this.dashboardButton.Click += new System.EventHandler(this.dashboardButton_Click);
             // 
             // welcomeUser
             // 

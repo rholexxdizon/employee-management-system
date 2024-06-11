@@ -15,8 +15,7 @@ namespace EmployeeManagementSystem
     
     public partial class LoginForm : Form
     {
-        SqlConnection connect 
-            = new SqlConnection(@"Data Source=RHOLEX-PC\SQLEXPRESS;Initial Catalog=EmployeeManagementSystem;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connect = new SqlConnection(@"Data Source=RHOLEX-PC\SQLEXPRESS;Initial Catalog=EmployeeManagementSystem;Integrated Security=True;Connect Timeout=30");
         public LoginForm()
         {
             InitializeComponent();
@@ -70,7 +69,7 @@ namespace EmployeeManagementSystem
                     {
                         connect.Open();
 
-                        string selectData = "SELECT * FROM Employees WHERE username = @username " + " AND password = @password";
+                        string selectData = "SELECT * FROM users WHERE username = @username " + " AND password = @password";
 
                         using (SqlCommand cmd = new SqlCommand(selectData, connect))
                         {

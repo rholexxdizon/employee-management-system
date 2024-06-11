@@ -14,8 +14,7 @@ namespace EmployeeManagementSystem
 {
     public partial class RegisterForm : Form
     {
-        SqlConnection connect 
-            = new SqlConnection(@"Data Source=RHOLEX-PC\SQLEXPRESS;Initial Catalog=EmployeeManagementSystem;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connect = new SqlConnection(@"Data Source=RHOLEX-PC\SQLEXPRESS;Initial Catalog=EmployeeManagementSystem;Integrated Security=True;Connect Timeout=30");
         public RegisterForm()
         {
             InitializeComponent();
@@ -48,7 +47,7 @@ namespace EmployeeManagementSystem
                     {
                         connect.Open();
                         //Check if the user is existing already
-                        string selectUsername = "SELECT COUNT(id) FROM Employees WHERE username = @user";
+                        string selectUsername = "SELECT COUNT(id) FROM users WHERE username = @user";
 
                         using (SqlCommand checkUser = new SqlCommand(selectUsername, connect))
                         {
@@ -64,7 +63,7 @@ namespace EmployeeManagementSystem
                             {
                                 DateTime today = DateTime.Today;
 
-                                string insertData = "INSERT INTO Employees " + "(username, password, date_register) " + "VALUES(@username, @password, @dateReg)";
+                                string insertData = "INSERT INTO users " + "(username, password, date_register) " + "VALUES(@username, @password, @dateReg)";
 
                                 using (SqlCommand cmd = new SqlCommand(insertData, connect))
                                 {

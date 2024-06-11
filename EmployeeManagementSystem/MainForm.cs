@@ -40,5 +40,27 @@ namespace EmployeeManagementSystem
                 this.Hide();
             }
         }
+
+        private void dashboardButton_Click(object sender, EventArgs e)
+        {
+            dashboard1.Visible = true;
+            addEmployee1.Visible = false;
+            salary1.Visible = false;
+
+        }
+
+        private void addEmployeeButton_Click(object sender, EventArgs e)
+        {
+            dashboard1.Visible = false;
+            addEmployee1.Visible = true;
+            salary1.Visible = false;
+        }
+
+        private void salaryButton_Click(object sender, EventArgs e)
+        {
+            dashboard1.Visible = false;
+            addEmployee1.Visible = false;
+            salary1.Visible = true;
+        }
     }
 }

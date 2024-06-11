@@ -58,6 +58,7 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeData.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,7 +126,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Directory\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Assets\picture_82px.png" />
     <None Include="Assets\total_employee_60px.png" />
