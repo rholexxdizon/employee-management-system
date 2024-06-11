@@ -28,5 +28,17 @@ namespace EmployeeManagementSystem
             login.Show();
             this.Hide();
         }
+
+        private void signOutButton_Click(object sender, EventArgs e)
+        {
+            DialogResult check = MessageBox.Show("Are you sure you want to logout?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (check == DialogResult.Yes)
+            {
+                LoginForm loginform = new LoginForm();
+                loginform.Show();
+                this.Hide();
+            }
+        }
     }
 }
