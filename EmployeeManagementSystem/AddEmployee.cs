@@ -70,8 +70,8 @@ namespace EmployeeManagementSystem
                             {
                                 DateTime today = DateTime.Today;
                                 string insertData = "INSERT INTO employees " + 
-                                    "(employee_id, full_name, gender, contact_number, position, image, insert_date, status)" +
-                                    "VALUES(@employeeID, @fullname, @gender, @contactNum, @position, @image, @insertDate, @status)";
+                                    "(employee_id, full_name, gender, contact_number, position, image, salary, insert_date, status)" +
+                                    "VALUES(@employeeID, @fullname, @gender, @contactNum, @position, @image, @salary, @insertDate, @status)";
 
                                 string path = Path.Combine(@"E:\Programming Applications\C# Desktop Application Projects\Employee Management System 2024\EmployeeManagementSystem\EmployeeManagementSystem\Directory\"
                                     + addEmployeeId.Text.Trim() + ".jpg");
@@ -93,6 +93,7 @@ namespace EmployeeManagementSystem
                                     cmd.Parameters.AddWithValue("@contactNum", addEmployeePhoneNumber.Text.Trim());
                                     cmd.Parameters.AddWithValue("@position", addEmployeePosition.Text.Trim());
                                     cmd.Parameters.AddWithValue("@image", path);
+                                    cmd.Parameters.AddWithValue("@salary", 0);
                                     cmd.Parameters.AddWithValue("@insertDate", today);
                                     cmd.Parameters.AddWithValue("@status", addEmployeeStatus.Text.Trim());
 

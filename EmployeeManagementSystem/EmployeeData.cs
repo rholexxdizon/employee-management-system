@@ -33,7 +33,7 @@ namespace EmployeeManagementSystem
                 {
                     connect.Open();
 
-                    string selectData = "SELECT * FROM employee WHERE delete_date IS NULL";
+                    string selectData = "SELECT * FROM employees WHERE delete_date IS NULL";
                     using (SqlCommand cmd = new SqlCommand(selectData, connect))
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
