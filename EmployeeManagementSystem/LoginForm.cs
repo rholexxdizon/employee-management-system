@@ -50,6 +50,21 @@ namespace EmployeeManagementSystem
             }
         }
 
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            _mouseloc = e.Location;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                int dx = e.Location.X - _mouseloc.X;
+                int dy = e.Location.Y - _mouseloc.Y;
+                this.Location = new Point(this.Location.X + dx, this.Location.Y + dy);
+            }
+        }
+
         private void loginShowPassword_CheckedChanged(object sender, EventArgs e)
         {
             loginPassword.PasswordChar = loginShowPassword.Checked ? '\0' : '*';
@@ -105,5 +120,21 @@ namespace EmployeeManagementSystem
                 }
             }
         }
+
+        private void loginButton_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                loginButton.PerformClick();
+            }
+
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

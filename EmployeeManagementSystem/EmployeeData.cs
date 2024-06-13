@@ -10,15 +10,15 @@ namespace EmployeeManagementSystem
 {
     class EmployeeData
     {
-        public int ID { set; get; }
-        public string EmployeeId { set; get; }
-        public string Name { set; get; }
-        public string Gender { set; get; }
-        public string Contact { set; get; }
-        public string Position { set; get; }
-        public string Image { set; get; }
-        public int Salary { set; get; }
-        public string Status { set; get; }
+        public int ID { set; get; } //0
+        public string EmployeeId { set; get; } //1
+        public string Name { set; get; } //2
+        public string Gender { set; get; } //3
+        public string Contact { set; get; } //4
+        public string Position { set; get; } //5
+        public string Image { set; get; } //6
+        public int Salary { set; get; } //7
+        public string Status { set; get; } //8
 
         SqlConnection connect = new SqlConnection(@"Data Source=RHOLEX-PC\SQLEXPRESS;Initial Catalog=EmployeeManagementSystem;Integrated Security=True;Connect Timeout=30");
 

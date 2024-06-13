@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 
 
@@ -139,6 +140,83 @@ namespace EmployeeManagementSystem
             }
             
 
+        }
+
+        private void addEmployeeDeleteBtn_Click(object sender, EventArgs e)
+        {
+            DeleteSelectedRecord();
+        }
+
+        private void DeleteSelectedRecord()
+        {
+            if(dataGridView1.SelectedRows.Count > 0)
+            {
+                int recordIdToDelete = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["id"].Value);
+
+                try
+                {
+                    connect.Open();
+                    string deleteQuery = "DELETE FROM employees WHERE id = @employeeID";
+                    SqlCommand cmd = new SqlCommand(deleteQuery, connect);
+                    cmd.Parameters.AddWithValue("@employeeID", recordIdToDelete);
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    displayEmployeeData();
+                    if (rowsAffected > 0)
+                    {
+                        MessageBox.Show("Record deleted successfully.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Record not found or already deleted");
+                    }
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error deleting record: " + ex.Message);
+                }
+                finally
+                {
+                    connect.Close();
+                }
+            }
+        }
+
+        private void addEmployeeClearBtn_Click(object sender, EventArgs e)
+        {
+            addEmployeeId.Text = "";
+            addEmployeeFullName.Text = "";
+            addEmployeeGender.Text = "";
+            addEmployeePhoneNumber.Text = "";
+            addEmployeePosition.Text = "";
+            addEmployeeStatus.Text = "";
+            addEmployeePicture.Text = "";
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex != -1)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+                addEmployeeId.Text = row.Cells[1].Value.ToString();
+                addEmployeeFullName.Text = row.Cells[2].Value.ToString();
+                addEmployeeGender.Text = row.Cells[3].Value.ToString();
+                addEmployeePhoneNumber.Text = row.Cells[4].Value.ToString();
+                addEmployeePosition.Text = row.Cells[5].Value.ToString();
+
+                string imagePath = row.Cells[6].Value.ToString();
+                if(imagePath != null)
+                {
+                    addEmployeePicture.Image = Image.FromFile(imagePath); 
+                }
+                else
+                {
+                    addEmployeePicture.Image = null;
+                }
+
+                addEmployeeStatus.Text = row.Cells[8].Value.ToString();
+
+            }
         }
     }
 }

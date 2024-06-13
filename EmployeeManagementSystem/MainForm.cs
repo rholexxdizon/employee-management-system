@@ -17,6 +17,7 @@ namespace EmployeeManagementSystem
             InitializeComponent();
         }
 
+        private Point _mouseloc;
         private void close_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -29,6 +30,20 @@ namespace EmployeeManagementSystem
             this.Hide();
         }
 
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            _mouseloc = e.Location;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Left)
+            {
+                int dx = e.Location.X  - _mouseloc.X;
+                int dy = e.Location.Y - _mouseloc.Y;
+                this.Location = new Point(this.Location.X + dx, this.Location.Y + dy);
+            }
+        }
         private void signOutButton_Click(object sender, EventArgs e)
         {
             DialogResult check = MessageBox.Show("Are you sure you want to logout?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
