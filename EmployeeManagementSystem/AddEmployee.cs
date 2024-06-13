@@ -186,10 +186,10 @@ namespace EmployeeManagementSystem
         {
             addEmployeeId.Text = "";
             addEmployeeFullName.Text = "";
-            addEmployeeGender.Text = "";
+            addEmployeeGender.SelectedIndex = -1;
             addEmployeePhoneNumber.Text = "";
-            addEmployeePosition.Text = "";
-            addEmployeeStatus.Text = "";
+            addEmployeePosition.SelectedIndex = -1;
+            addEmployeeStatus.SelectedIndex = -1;
             addEmployeePicture.Text = "";
         }
 
