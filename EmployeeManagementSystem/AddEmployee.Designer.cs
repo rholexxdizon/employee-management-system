@@ -228,6 +228,7 @@
             this.addEmployeeUpdateBtn.TabIndex = 12;
             this.addEmployeeUpdateBtn.Text = "Update";
             this.addEmployeeUpdateBtn.UseVisualStyleBackColor = false;
+            this.addEmployeeUpdateBtn.Click += new System.EventHandler(this.addEmployeeUpdateBtn_Click);
             // 
             // addEmployeeAddBtn
             // 
