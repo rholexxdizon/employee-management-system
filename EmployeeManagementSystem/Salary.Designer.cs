@@ -33,13 +33,13 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.salary_salary = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.salary_Position = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.salary_fullName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.salary_employeeId = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -57,13 +57,13 @@
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.salary_salary);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.salary_Position);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.salary_fullName);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.salary_employeeId);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(17, 16);
             this.panel1.Name = "panel1";
@@ -122,12 +122,12 @@
             this.button3.Text = "Import";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // textBox4
+            // salary_salary
             // 
-            this.textBox4.Location = new System.Drawing.Point(17, 237);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(220, 20);
-            this.textBox4.TabIndex = 7;
+            this.salary_salary.Location = new System.Drawing.Point(17, 237);
+            this.salary_salary.Name = "salary_salary";
+            this.salary_salary.Size = new System.Drawing.Size(220, 20);
+            this.salary_salary.TabIndex = 7;
             // 
             // label5
             // 
@@ -140,12 +140,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Salary:";
             // 
-            // textBox3
+            // salary_Position
             // 
-            this.textBox3.Location = new System.Drawing.Point(17, 178);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(220, 20);
-            this.textBox3.TabIndex = 5;
+            this.salary_Position.Location = new System.Drawing.Point(17, 178);
+            this.salary_Position.Name = "salary_Position";
+            this.salary_Position.Size = new System.Drawing.Size(220, 20);
+            this.salary_Position.TabIndex = 5;
             // 
             // label4
             // 
@@ -158,12 +158,12 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Position:";
             // 
-            // textBox2
+            // salary_fullName
             // 
-            this.textBox2.Location = new System.Drawing.Point(17, 113);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(220, 20);
-            this.textBox2.TabIndex = 3;
+            this.salary_fullName.Location = new System.Drawing.Point(17, 113);
+            this.salary_fullName.Name = "salary_fullName";
+            this.salary_fullName.Size = new System.Drawing.Size(220, 20);
+            this.salary_fullName.TabIndex = 3;
             // 
             // label3
             // 
@@ -176,12 +176,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Full Name:";
             // 
-            // textBox1
+            // salary_employeeId
             // 
-            this.textBox1.Location = new System.Drawing.Point(17, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 20);
-            this.textBox1.TabIndex = 2;
+            this.salary_employeeId.Location = new System.Drawing.Point(17, 50);
+            this.salary_employeeId.Name = "salary_employeeId";
+            this.salary_employeeId.Size = new System.Drawing.Size(220, 20);
+            this.salary_employeeId.TabIndex = 2;
             // 
             // label2
             // 
@@ -247,13 +247,13 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox salary_salary;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox salary_Position;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox salary_fullName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox salary_employeeId;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;

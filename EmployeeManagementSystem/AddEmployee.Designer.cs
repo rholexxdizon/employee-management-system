@@ -34,28 +34,28 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.addEmployeeStatus = new System.Windows.Forms.ComboBox();
+            this.addEmployee_status = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.addEmployeePosition = new System.Windows.Forms.ComboBox();
+            this.addEmployee_position = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.addEmployeeClearBtn = new System.Windows.Forms.Button();
             this.addEmployeeDeleteBtn = new System.Windows.Forms.Button();
             this.addEmployeeUpdateBtn = new System.Windows.Forms.Button();
             this.addEmployeeAddBtn = new System.Windows.Forms.Button();
             this.addEmployeeImportBtn = new System.Windows.Forms.Button();
-            this.addEmployeePicture = new System.Windows.Forms.PictureBox();
-            this.addEmployeePhoneNumber = new System.Windows.Forms.TextBox();
+            this.addEmployee_picture = new System.Windows.Forms.PictureBox();
+            this.addEmployee_phoneNumber = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.addEmployeeGender = new System.Windows.Forms.ComboBox();
+            this.addEmployee_gender = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.addEmployeeFullName = new System.Windows.Forms.TextBox();
+            this.addEmployee_fullName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.addEmployeeId = new System.Windows.Forms.TextBox();
+            this.addEmployee_id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.addEmployeePicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addEmployee_picture)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -115,41 +115,41 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.addEmployeeStatus);
+            this.panel2.Controls.Add(this.addEmployee_status);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.addEmployeePosition);
+            this.panel2.Controls.Add(this.addEmployee_position);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.addEmployeeClearBtn);
             this.panel2.Controls.Add(this.addEmployeeDeleteBtn);
             this.panel2.Controls.Add(this.addEmployeeUpdateBtn);
             this.panel2.Controls.Add(this.addEmployeeAddBtn);
             this.panel2.Controls.Add(this.addEmployeeImportBtn);
-            this.panel2.Controls.Add(this.addEmployeePicture);
-            this.panel2.Controls.Add(this.addEmployeePhoneNumber);
+            this.panel2.Controls.Add(this.addEmployee_picture);
+            this.panel2.Controls.Add(this.addEmployee_phoneNumber);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.addEmployeeGender);
+            this.panel2.Controls.Add(this.addEmployee_gender);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.addEmployeeFullName);
+            this.panel2.Controls.Add(this.addEmployee_fullName);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.addEmployeeId);
+            this.panel2.Controls.Add(this.addEmployee_id);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(22, 357);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(839, 182);
             this.panel2.TabIndex = 1;
             // 
-            // addEmployeeStatus
+            // addEmployee_status
             // 
-            this.addEmployeeStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.addEmployeeStatus.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEmployeeStatus.FormattingEnabled = true;
-            this.addEmployeeStatus.Items.AddRange(new object[] {
+            this.addEmployee_status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.addEmployee_status.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addEmployee_status.FormattingEnabled = true;
+            this.addEmployee_status.Items.AddRange(new object[] {
             "Active",
             "Inactive"});
-            this.addEmployeeStatus.Location = new System.Drawing.Point(423, 93);
-            this.addEmployeeStatus.Name = "addEmployeeStatus";
-            this.addEmployeeStatus.Size = new System.Drawing.Size(151, 21);
-            this.addEmployeeStatus.TabIndex = 18;
+            this.addEmployee_status.Location = new System.Drawing.Point(423, 93);
+            this.addEmployee_status.Name = "addEmployee_status";
+            this.addEmployee_status.Size = new System.Drawing.Size(151, 21);
+            this.addEmployee_status.TabIndex = 18;
             // 
             // label7
             // 
@@ -162,20 +162,20 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Status:";
             // 
-            // addEmployeePosition
+            // addEmployee_position
             // 
-            this.addEmployeePosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.addEmployeePosition.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEmployeePosition.FormattingEnabled = true;
-            this.addEmployeePosition.Items.AddRange(new object[] {
+            this.addEmployee_position.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.addEmployee_position.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addEmployee_position.FormattingEnabled = true;
+            this.addEmployee_position.Items.AddRange(new object[] {
             "UI/UX Designer",
             "Full-Stack Developer",
             "Front-End Developer",
             "Back-End Dveloper"});
-            this.addEmployeePosition.Location = new System.Drawing.Point(423, 57);
-            this.addEmployeePosition.Name = "addEmployeePosition";
-            this.addEmployeePosition.Size = new System.Drawing.Size(151, 21);
-            this.addEmployeePosition.TabIndex = 16;
+            this.addEmployee_position.Location = new System.Drawing.Point(423, 57);
+            this.addEmployee_position.Name = "addEmployee_position";
+            this.addEmployee_position.Size = new System.Drawing.Size(151, 21);
+            this.addEmployee_position.TabIndex = 16;
             // 
             // label6
             // 
@@ -258,24 +258,24 @@
             this.addEmployeeImportBtn.UseVisualStyleBackColor = false;
             this.addEmployeeImportBtn.Click += new System.EventHandler(this.addEmployeeImportBtn_Click);
             // 
-            // addEmployeePicture
+            // addEmployee_picture
             // 
-            this.addEmployeePicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.addEmployeePicture.Image = global::EmployeeManagementSystem.Properties.Resources.picture_82px;
-            this.addEmployeePicture.Location = new System.Drawing.Point(726, 17);
-            this.addEmployeePicture.Name = "addEmployeePicture";
-            this.addEmployeePicture.Size = new System.Drawing.Size(82, 90);
-            this.addEmployeePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.addEmployeePicture.TabIndex = 8;
-            this.addEmployeePicture.TabStop = false;
+            this.addEmployee_picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.addEmployee_picture.Image = global::EmployeeManagementSystem.Properties.Resources.picture_82px;
+            this.addEmployee_picture.Location = new System.Drawing.Point(726, 17);
+            this.addEmployee_picture.Name = "addEmployee_picture";
+            this.addEmployee_picture.Size = new System.Drawing.Size(82, 90);
+            this.addEmployee_picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.addEmployee_picture.TabIndex = 8;
+            this.addEmployee_picture.TabStop = false;
             // 
-            // addEmployeePhoneNumber
+            // addEmployee_phoneNumber
             // 
-            this.addEmployeePhoneNumber.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEmployeePhoneNumber.Location = new System.Drawing.Point(423, 19);
-            this.addEmployeePhoneNumber.Name = "addEmployeePhoneNumber";
-            this.addEmployeePhoneNumber.Size = new System.Drawing.Size(151, 21);
-            this.addEmployeePhoneNumber.TabIndex = 7;
+            this.addEmployee_phoneNumber.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addEmployee_phoneNumber.Location = new System.Drawing.Point(423, 19);
+            this.addEmployee_phoneNumber.Name = "addEmployee_phoneNumber";
+            this.addEmployee_phoneNumber.Size = new System.Drawing.Size(151, 21);
+            this.addEmployee_phoneNumber.TabIndex = 7;
             // 
             // label5
             // 
@@ -288,18 +288,18 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Phone Number:";
             // 
-            // addEmployeeGender
+            // addEmployee_gender
             // 
-            this.addEmployeeGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.addEmployeeGender.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEmployeeGender.FormattingEnabled = true;
-            this.addEmployeeGender.Items.AddRange(new object[] {
+            this.addEmployee_gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.addEmployee_gender.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addEmployee_gender.FormattingEnabled = true;
+            this.addEmployee_gender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.addEmployeeGender.Location = new System.Drawing.Point(125, 93);
-            this.addEmployeeGender.Name = "addEmployeeGender";
-            this.addEmployeeGender.Size = new System.Drawing.Size(151, 21);
-            this.addEmployeeGender.TabIndex = 5;
+            this.addEmployee_gender.Location = new System.Drawing.Point(125, 93);
+            this.addEmployee_gender.Name = "addEmployee_gender";
+            this.addEmployee_gender.Size = new System.Drawing.Size(151, 21);
+            this.addEmployee_gender.TabIndex = 5;
             // 
             // label4
             // 
@@ -312,13 +312,13 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Gender:";
             // 
-            // addEmployeeFullName
+            // addEmployee_fullName
             // 
-            this.addEmployeeFullName.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEmployeeFullName.Location = new System.Drawing.Point(125, 55);
-            this.addEmployeeFullName.Name = "addEmployeeFullName";
-            this.addEmployeeFullName.Size = new System.Drawing.Size(151, 21);
-            this.addEmployeeFullName.TabIndex = 3;
+            this.addEmployee_fullName.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addEmployee_fullName.Location = new System.Drawing.Point(125, 55);
+            this.addEmployee_fullName.Name = "addEmployee_fullName";
+            this.addEmployee_fullName.Size = new System.Drawing.Size(151, 21);
+            this.addEmployee_fullName.TabIndex = 3;
             // 
             // label3
             // 
@@ -331,13 +331,13 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Full Name:";
             // 
-            // addEmployeeId
+            // addEmployee_id
             // 
-            this.addEmployeeId.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEmployeeId.Location = new System.Drawing.Point(125, 17);
-            this.addEmployeeId.Name = "addEmployeeId";
-            this.addEmployeeId.Size = new System.Drawing.Size(151, 21);
-            this.addEmployeeId.TabIndex = 1;
+            this.addEmployee_id.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addEmployee_id.Location = new System.Drawing.Point(125, 17);
+            this.addEmployee_id.Name = "addEmployee_id";
+            this.addEmployee_id.Size = new System.Drawing.Size(151, 21);
+            this.addEmployee_id.TabIndex = 1;
             // 
             // label2
             // 
@@ -364,7 +364,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.addEmployeePicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addEmployee_picture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -375,23 +375,23 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox addEmployeeGender;
+        private System.Windows.Forms.ComboBox addEmployee_gender;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox addEmployeeFullName;
+        private System.Windows.Forms.TextBox addEmployee_fullName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox addEmployeeId;
+        private System.Windows.Forms.TextBox addEmployee_id;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox addEmployeePhoneNumber;
+        private System.Windows.Forms.TextBox addEmployee_phoneNumber;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox addEmployeePicture;
+        private System.Windows.Forms.PictureBox addEmployee_picture;
         private System.Windows.Forms.Button addEmployeeImportBtn;
         private System.Windows.Forms.Button addEmployeeClearBtn;
         private System.Windows.Forms.Button addEmployeeDeleteBtn;
         private System.Windows.Forms.Button addEmployeeUpdateBtn;
         private System.Windows.Forms.Button addEmployeeAddBtn;
-        private System.Windows.Forms.ComboBox addEmployeePosition;
+        private System.Windows.Forms.ComboBox addEmployee_position;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox addEmployeeStatus;
+        private System.Windows.Forms.ComboBox addEmployee_status;
         private System.Windows.Forms.Label label7;
     }
 }

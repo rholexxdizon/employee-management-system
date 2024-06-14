@@ -37,13 +37,13 @@ namespace EmployeeManagementSystem
         }
         private void addEmployeeAddBtn_Click(object sender, EventArgs e)
         {
-            if (addEmployeeId.Text == ""
-                || addEmployeeFullName.Text == ""
-                || addEmployeeGender.Text == ""
-                || addEmployeePhoneNumber.Text == ""
-                || addEmployeePosition.Text == ""
-                || addEmployeeStatus.Text == ""
-                || addEmployeePicture == null)
+            if (addEmployee_id.Text == ""
+                || addEmployee_fullName.Text == ""
+                || addEmployee_gender.Text == ""
+                || addEmployee_phoneNumber.Text == ""
+                || addEmployee_position.Text == ""
+                || addEmployee_status.Text == ""
+                || addEmployee_picture == null)
             {
                 MessageBox.Show("Please fill all the blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -58,12 +58,12 @@ namespace EmployeeManagementSystem
 
                         using (SqlCommand checkEm = new SqlCommand(checkEmID, connect))
                         {
-                            checkEm.Parameters.AddWithValue("@emID", addEmployeeId.Text.Trim());
+                            checkEm.Parameters.AddWithValue("@emID", addEmployee_id.Text.Trim());
                             int count = (int)checkEm.ExecuteScalar();
 
                             if (count >= 1)
                             {
-                                MessageBox.Show(addEmployeeId.Text.Trim() + " is already taken", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show(addEmployee_id.Text.Trim() + " is already taken", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                             }
 
                             else
@@ -74,7 +74,7 @@ namespace EmployeeManagementSystem
                                     "VALUES(@employeeID, @fullname, @gender, @contactNum, @position, @image, @salary, @insertDate, @status)";
 
                                 string path = Path.Combine(@"E:\Programming Applications\C# Desktop Application Projects\Employee Management System 2024\EmployeeManagementSystem\EmployeeManagementSystem\Directory\"
-                                    + addEmployeeId.Text.Trim() + ".jpg");
+                                    + addEmployee_id.Text.Trim() + ".jpg");
 
                                 string directoryPath = Path.GetDirectoryName(path);
 
@@ -83,19 +83,19 @@ namespace EmployeeManagementSystem
                                     Directory.CreateDirectory(directoryPath);
                                 }
 
-                                File.Copy(addEmployeePicture.ImageLocation, path, true);
+                                File.Copy(addEmployee_picture.ImageLocation, path, true);
 
                                 using (SqlCommand cmd = new SqlCommand(insertData, connect))
                                 {
-                                    cmd.Parameters.AddWithValue("@employeeID", addEmployeeId.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@fullname", addEmployeeFullName.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@gender", addEmployeeGender.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@contactNum", addEmployeePhoneNumber.Text.Trim());
-                                    cmd.Parameters.AddWithValue("@position", addEmployeePosition.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@employeeID", addEmployee_id.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@fullname", addEmployee_fullName.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@gender", addEmployee_gender.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@contactNum", addEmployee_phoneNumber.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@position", addEmployee_position.Text.Trim());
                                     cmd.Parameters.AddWithValue("@image", path);
                                     cmd.Parameters.AddWithValue("@salary", 0);
                                     cmd.Parameters.AddWithValue("@insertDate", today);
-                                    cmd.Parameters.AddWithValue("@status", addEmployeeStatus.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@status", addEmployee_status.Text.Trim());
 
                                     cmd.ExecuteNonQuery();
                                     displayEmployeeData();
@@ -131,7 +131,7 @@ namespace EmployeeManagementSystem
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
                     imagePath = dialog.FileName;
-                    addEmployeePicture.ImageLocation = imagePath;
+                    addEmployee_picture.ImageLocation = imagePath;
                 }
             }
 
@@ -145,19 +145,19 @@ namespace EmployeeManagementSystem
 
         private void addEmployeeDeleteBtn_Click(object sender, EventArgs e)
         {
-            if (addEmployeeId.Text == ""
-                || addEmployeeFullName.Text == ""
-                || addEmployeeGender.Text == ""
-                || addEmployeePhoneNumber.Text == ""
-                || addEmployeePosition.Text == ""
-                || addEmployeeStatus.Text == ""
-                || addEmployeePicture == null)
+            if (addEmployee_id.Text == ""
+                || addEmployee_fullName.Text == ""
+                || addEmployee_gender.Text == ""
+                || addEmployee_phoneNumber.Text == ""
+                || addEmployee_position.Text == ""
+                || addEmployee_status.Text == ""
+                || addEmployee_picture == null)
             {
                 MessageBox.Show("Please fill all the blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                DialogResult check = MessageBox.Show("Are you sure you want to DELETE? " + "Employee ID: " + addEmployeeId.Text.Trim() + "?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                DialogResult check = MessageBox.Show("Are you sure you want to DELETE? " + "Employee ID: " + addEmployee_id.Text.Trim() + "?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
                 if (check == DialogResult.Yes)
                 {
@@ -172,7 +172,7 @@ namespace EmployeeManagementSystem
                         using (SqlCommand cmd = new SqlCommand(updateData, connect))
                         {
                             cmd.Parameters.AddWithValue("@deleteDate", today);
-                            cmd.Parameters.AddWithValue("@employeeID", addEmployeeId.Text.Trim());
+                            cmd.Parameters.AddWithValue("@employeeID", addEmployee_id.Text.Trim());
 
                             cmd.ExecuteNonQuery();
 
@@ -180,18 +180,7 @@ namespace EmployeeManagementSystem
                             MessageBox.Show("Deleted successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                             clearFields();
-                            //string path = Path.Combine(@"E:\Programming Applications\C# Desktop Application Projects\Employee Management System 2024\EmployeeManagementSystem\EmployeeManagementSystem\Directory\"
-                            //        + addEmployeeId.Text.Trim() + ".jpg");
-
-                            //string directoryPath = Path.GetDirectoryName(path);
-
-                            //if (!Directory.Exists(directoryPath))
-                            //{
-                            //    Directory.CreateDirectory(directoryPath);
-                            //}
-
-                            //File.Copy(addEmployeePicture.ImageLocation, path, true);
-
+                          
 
                         }
 
@@ -216,13 +205,13 @@ namespace EmployeeManagementSystem
 
         private void addEmployeeClearBtn_Click(object sender, EventArgs e)
         {
-            addEmployeeId.Text = "";
-            addEmployeeFullName.Text = "";
-            addEmployeeGender.SelectedIndex = -1;
-            addEmployeePhoneNumber.Text = "";
-            addEmployeePosition.SelectedIndex = -1;
-            addEmployeeStatus.SelectedIndex = -1;
-            addEmployeePicture.Text = "";
+            addEmployee_id.Text = "";
+            addEmployee_fullName.Text = "";
+            addEmployee_gender.SelectedIndex = -1;
+            addEmployee_phoneNumber.Text = "";
+            addEmployee_position.SelectedIndex = -1;
+            addEmployee_status.SelectedIndex = -1;
+            addEmployee_picture.Image = null;
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -230,53 +219,53 @@ namespace EmployeeManagementSystem
             if (e.RowIndex != -1)
             {
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-                addEmployeeId.Text = row.Cells[1].Value.ToString();
-                addEmployeeFullName.Text = row.Cells[2].Value.ToString();
-                addEmployeeGender.Text = row.Cells[3].Value.ToString();
-                addEmployeePhoneNumber.Text = row.Cells[4].Value.ToString();
-                addEmployeePosition.Text = row.Cells[5].Value.ToString();
+                addEmployee_id.Text = row.Cells[1].Value.ToString();
+                addEmployee_fullName.Text = row.Cells[2].Value.ToString();
+                addEmployee_gender.Text = row.Cells[3].Value.ToString();
+                addEmployee_phoneNumber.Text = row.Cells[4].Value.ToString();
+                addEmployee_position.Text = row.Cells[5].Value.ToString();
 
                 string imagePath = row.Cells[6].Value.ToString();
                 if (imagePath != null)
                 {
-                    addEmployeePicture.Image = Image.FromFile(imagePath);
+                    addEmployee_picture.Image = Image.FromFile(imagePath);
                 }
                 else
                 {
-                    addEmployeePicture.Image = null;
+                    addEmployee_picture.Image = null;
                 }
 
-                addEmployeeStatus.Text = row.Cells[8].Value.ToString();
+                addEmployee_status.Text = row.Cells[8].Value.ToString();
 
             }
         }
 
         private void clearFields()
         {
-            addEmployeeId.Text = "";
-            addEmployeeFullName.Text = "";
-            addEmployeeGender.SelectedIndex = -1;
-            addEmployeePhoneNumber.Text = "";
-            addEmployeePosition.SelectedIndex = -1;
-            addEmployeeStatus.SelectedIndex = -1;
-            addEmployeePicture.Text = null;
+            addEmployee_id.Text = "";
+            addEmployee_fullName.Text = "";
+            addEmployee_gender.SelectedIndex = -1;
+            addEmployee_phoneNumber.Text = "";
+            addEmployee_position.SelectedIndex = -1;
+            addEmployee_status.SelectedIndex = -1;
+            addEmployee_picture.Image = null;
         }
 
         private void addEmployeeUpdateBtn_Click(object sender, EventArgs e)
         {
-            if (addEmployeeId.Text == ""
-                || addEmployeeFullName.Text == ""
-                || addEmployeeGender.Text == ""
-                || addEmployeePhoneNumber.Text == ""
-                || addEmployeePosition.Text == ""
-                || addEmployeeStatus.Text == ""
-                || addEmployeePicture == null)
+            if (addEmployee_id.Text == ""
+                || addEmployee_fullName.Text == ""
+                || addEmployee_gender.Text == ""
+                || addEmployee_phoneNumber.Text == ""
+                || addEmployee_position.Text == ""
+                || addEmployee_status.Text == ""
+                || addEmployee_picture == null)
             {
                 MessageBox.Show("Please fill all the blank fields", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                DialogResult check = MessageBox.Show("Are you sure you want to UPDATE? " + "Employee ID: " + addEmployeeId.Text.Trim() + "?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                DialogResult check = MessageBox.Show("Are you sure you want to UPDATE? " + "Employee ID: " + addEmployee_id.Text.Trim() + "?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
                 if (check == DialogResult.Yes)
                 {
@@ -292,13 +281,13 @@ namespace EmployeeManagementSystem
 
                         using (SqlCommand cmd = new SqlCommand(updateData,connect))
                         {
-                            cmd.Parameters.AddWithValue("@fullname", addEmployeeFullName.Text.Trim());
-                            cmd.Parameters.AddWithValue("@gender", addEmployeeGender.Text.Trim());
-                            cmd.Parameters.AddWithValue("@contactNum", addEmployeePhoneNumber.Text.Trim());
-                            cmd.Parameters.AddWithValue("@position", addEmployeePosition.Text.Trim());
+                            cmd.Parameters.AddWithValue("@fullname", addEmployee_fullName.Text.Trim());
+                            cmd.Parameters.AddWithValue("@gender", addEmployee_gender.Text.Trim());
+                            cmd.Parameters.AddWithValue("@contactNum", addEmployee_phoneNumber.Text.Trim());
+                            cmd.Parameters.AddWithValue("@position", addEmployee_position.Text.Trim());
                             cmd.Parameters.AddWithValue("@updateDate", today);
-                            cmd.Parameters.AddWithValue("@status", addEmployeeStatus.Text.Trim());
-                            cmd.Parameters.AddWithValue("@employeeID", addEmployeeId.Text.Trim());
+                            cmd.Parameters.AddWithValue("@status", addEmployee_status.Text.Trim());
+                            cmd.Parameters.AddWithValue("@employeeID", addEmployee_id.Text.Trim());
 
                             cmd.ExecuteNonQuery();
 
