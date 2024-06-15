@@ -30,15 +30,15 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.dashboard_IE = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.dashboard_AE = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.dashboard_TE = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -66,7 +66,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(166)))), ((int)(((byte)(190)))));
-            this.panel5.Controls.Add(this.label4);
+            this.panel5.Controls.Add(this.dashboard_IE);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Controls.Add(this.pictureBox2);
             this.panel5.Location = new System.Drawing.Point(580, 24);
@@ -74,16 +74,16 @@
             this.panel5.Size = new System.Drawing.Size(240, 120);
             this.panel5.TabIndex = 1;
             // 
-            // label4
+            // dashboard_IE
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(211, 27);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(16, 18);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "0";
+            this.dashboard_IE.AutoSize = true;
+            this.dashboard_IE.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_IE.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dashboard_IE.Location = new System.Drawing.Point(211, 27);
+            this.dashboard_IE.Name = "dashboard_IE";
+            this.dashboard_IE.Size = new System.Drawing.Size(16, 18);
+            this.dashboard_IE.TabIndex = 7;
+            this.dashboard_IE.Text = "0";
             // 
             // label6
             // 
@@ -109,7 +109,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(166)))), ((int)(((byte)(190)))));
-            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.dashboard_AE);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Location = new System.Drawing.Point(309, 24);
@@ -117,16 +117,16 @@
             this.panel4.Size = new System.Drawing.Size(240, 120);
             this.panel4.TabIndex = 1;
             // 
-            // label1
+            // dashboard_AE
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(210, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(16, 18);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "0";
+            this.dashboard_AE.AutoSize = true;
+            this.dashboard_AE.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_AE.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dashboard_AE.Location = new System.Drawing.Point(210, 27);
+            this.dashboard_AE.Name = "dashboard_AE";
+            this.dashboard_AE.Size = new System.Drawing.Size(16, 18);
+            this.dashboard_AE.TabIndex = 5;
+            this.dashboard_AE.Text = "0";
             // 
             // label3
             // 
@@ -152,7 +152,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(166)))), ((int)(((byte)(190)))));
-            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.dashboard_TE);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(28, 24);
@@ -160,16 +160,16 @@
             this.panel3.Size = new System.Drawing.Size(240, 120);
             this.panel3.TabIndex = 0;
             // 
-            // label5
+            // dashboard_TE
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(188, 27);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(16, 18);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "0";
+            this.dashboard_TE.AutoSize = true;
+            this.dashboard_TE.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard_TE.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dashboard_TE.Location = new System.Drawing.Point(188, 27);
+            this.dashboard_TE.Name = "dashboard_TE";
+            this.dashboard_TE.Size = new System.Drawing.Size(16, 18);
+            this.dashboard_TE.TabIndex = 3;
+            this.dashboard_TE.Text = "0";
             // 
             // label2
             // 
@@ -235,10 +235,10 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label dashboard_IE;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label dashboard_AE;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label dashboard_TE;
     }
 }

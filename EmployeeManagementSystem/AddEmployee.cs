@@ -28,6 +28,8 @@ namespace EmployeeManagementSystem
             displayEmployeeData();
         }
 
+        
+
         public void displayEmployeeData()
         {
             EmployeeData employeedata = new EmployeeData();
@@ -35,6 +37,10 @@ namespace EmployeeManagementSystem
 
             dataGridView1.DataSource = listdata;
         }
+
+
+
+
         private void addEmployeeAddBtn_Click(object sender, EventArgs e)
         {
             if (addEmployee_id.Text == ""
@@ -281,6 +287,8 @@ namespace EmployeeManagementSystem
 
                         using (SqlCommand cmd = new SqlCommand(updateData,connect))
                         {
+
+                           
                             cmd.Parameters.AddWithValue("@fullname", addEmployee_fullName.Text.Trim());
                             cmd.Parameters.AddWithValue("@gender", addEmployee_gender.Text.Trim());
                             cmd.Parameters.AddWithValue("@contactNum", addEmployee_phoneNumber.Text.Trim());
@@ -288,24 +296,18 @@ namespace EmployeeManagementSystem
                             cmd.Parameters.AddWithValue("@updateDate", today);
                             cmd.Parameters.AddWithValue("@status", addEmployee_status.Text.Trim());
                             cmd.Parameters.AddWithValue("@employeeID", addEmployee_id.Text.Trim());
+                            
 
+
+
+                            
                             cmd.ExecuteNonQuery();
 
                             displayEmployeeData();
-                            MessageBox.Show("Added successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MessageBox.Show("Updated successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                             clearFields();
-                            //string path = Path.Combine(@"E:\Programming Applications\C# Desktop Application Projects\Employee Management System 2024\EmployeeManagementSystem\EmployeeManagementSystem\Directory\"
-                            //        + addEmployeeId.Text.Trim() + ".jpg");
 
-                            //string directoryPath = Path.GetDirectoryName(path);
-
-                            //if (!Directory.Exists(directoryPath))
-                            //{
-                            //    Directory.CreateDirectory(directoryPath);
-                            //}
-
-                            //File.Copy(addEmployeePicture.ImageLocation, path, true);
 
 
                         }

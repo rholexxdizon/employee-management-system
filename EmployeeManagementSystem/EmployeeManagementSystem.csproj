@@ -85,6 +85,7 @@
     <Compile Include="Salary.Designer.cs">
       <DependentUpon>Salary.cs</DependentUpon>
     </Compile>
+    <Compile Include="SalaryData.cs" />
     <EmbeddedResource Include="AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
