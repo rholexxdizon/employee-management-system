@@ -21,18 +21,23 @@ namespace EmployeeManagementSystem
             InitializeComponent();
 
             salaryListData();
-            disableFields();
-            AddEmployee form = new AddEmployee();   
-            
+            disableFields();     
         }
 
         public void RefreshData()
         {
             if (InvokeRequired)
             {
-
+                Invoke((MethodInvoker)RefreshData);
+                return;
             }
 
+            salaryListData();
+        }
+
+        public void ClearGridSelection()
+        {
+            dataGridView1.ClearSelection();
         }
 
         public void disableFields()

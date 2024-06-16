@@ -131,6 +131,14 @@
     <Folder Include="Directory\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\teamwork-triumph-a-celebration-of-collaboration-innovation-and-success-vector.jpg" />
+    <None Include="Resources\medical-innovation-concept-background-health-care-icons-on-a-blue-background-illustration-vector.jpg" />
+    <None Include="Resources\EMS Pic 3-Enhanced.jpg" />
+    <None Include="Resources\EMS Pic 31.jpg" />
+    <None Include="Resources\Rholex Pic 250x250 Enhanced.jpg" />
+    <None Include="Resources\EMS Pic 3.jpg" />
+    <None Include="Resources\EMS Pic 2.jpg" />
+    <None Include="Resources\EMS Pic.jpg" />
     <None Include="Assets\picture_82px.png" />
     <None Include="Assets\total_employee_60px.png" />
     <None Include="Assets\user_groups_50px.png" />

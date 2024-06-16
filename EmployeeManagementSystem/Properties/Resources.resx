@@ -118,17 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="inactive_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\inactive_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="user_groups_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\user_groups_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="employee_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\employee_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="EMS Pic 31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EMS Pic 31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="active_employee_60PX" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\active_employee_60PX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EMS Pic 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EMS Pic 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shutdown_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\shutdown_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,11 +145,17 @@
   <data name="administrator_male_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\administrator_male_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="EMS Pic 3-Enhanced" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EMS Pic 3-Enhanced.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="users_100px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\users_100px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="money_circulation_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\money_circulation_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EMS Pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EMS Pic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="employee_30px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\employee_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,19 +163,34 @@
   <data name="total_employee_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\total_employee_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="total_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\total_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dashboard_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\dashboard_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="inactive_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\inactive_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="manager" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\manager.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="picture_82px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\picture_82px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="total_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\total_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EMS Pic 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EMS Pic 3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rholex Pic 250x250 Enhanced" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rholex Pic 250x250 Enhanced.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="medical-innovation-concept-background-health-care-icons-on-a-blue-background-illustration-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\medical-innovation-concept-background-health-care-icons-on-a-blue-background-illustration-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dashboard_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\dashboard_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="teamwork-triumph-a-celebration-of-collaboration-innovation-and-success-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\teamwork-triumph-a-celebration-of-collaboration-innovation-and-success-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inactive_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\inactive_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inactive_60px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\inactive_60px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

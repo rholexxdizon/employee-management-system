@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -73,30 +73,36 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(166)))), ((int)(((byte)(190)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 60);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 60);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(784, 231);
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.dataGridView1.Size = new System.Drawing.Size(805, 231);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -148,7 +154,7 @@
             "Inactive"});
             this.addEmployee_status.Location = new System.Drawing.Point(423, 93);
             this.addEmployee_status.Name = "addEmployee_status";
-            this.addEmployee_status.Size = new System.Drawing.Size(151, 21);
+            this.addEmployee_status.Size = new System.Drawing.Size(97, 21);
             this.addEmployee_status.TabIndex = 18;
             // 
             // label7
@@ -174,7 +180,7 @@
             "Back-End Dveloper"});
             this.addEmployee_position.Location = new System.Drawing.Point(423, 57);
             this.addEmployee_position.Name = "addEmployee_position";
-            this.addEmployee_position.Size = new System.Drawing.Size(151, 21);
+            this.addEmployee_position.Size = new System.Drawing.Size(205, 21);
             this.addEmployee_position.TabIndex = 16;
             // 
             // label6
@@ -194,7 +200,7 @@
             this.addEmployeeClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addEmployeeClearBtn.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addEmployeeClearBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.addEmployeeClearBtn.Location = new System.Drawing.Point(584, 132);
+            this.addEmployeeClearBtn.Location = new System.Drawing.Point(562, 132);
             this.addEmployeeClearBtn.Name = "addEmployeeClearBtn";
             this.addEmployeeClearBtn.Size = new System.Drawing.Size(97, 39);
             this.addEmployeeClearBtn.TabIndex = 14;
@@ -208,7 +214,7 @@
             this.addEmployeeDeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addEmployeeDeleteBtn.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addEmployeeDeleteBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.addEmployeeDeleteBtn.Location = new System.Drawing.Point(456, 132);
+            this.addEmployeeDeleteBtn.Location = new System.Drawing.Point(434, 132);
             this.addEmployeeDeleteBtn.Name = "addEmployeeDeleteBtn";
             this.addEmployeeDeleteBtn.Size = new System.Drawing.Size(97, 39);
             this.addEmployeeDeleteBtn.TabIndex = 13;
@@ -222,7 +228,7 @@
             this.addEmployeeUpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addEmployeeUpdateBtn.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addEmployeeUpdateBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.addEmployeeUpdateBtn.Location = new System.Drawing.Point(331, 132);
+            this.addEmployeeUpdateBtn.Location = new System.Drawing.Point(289, 132);
             this.addEmployeeUpdateBtn.Name = "addEmployeeUpdateBtn";
             this.addEmployeeUpdateBtn.Size = new System.Drawing.Size(97, 39);
             this.addEmployeeUpdateBtn.TabIndex = 12;
@@ -236,7 +242,7 @@
             this.addEmployeeAddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addEmployeeAddBtn.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addEmployeeAddBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.addEmployeeAddBtn.Location = new System.Drawing.Point(205, 132);
+            this.addEmployeeAddBtn.Location = new System.Drawing.Point(148, 132);
             this.addEmployeeAddBtn.Name = "addEmployeeAddBtn";
             this.addEmployeeAddBtn.Size = new System.Drawing.Size(97, 39);
             this.addEmployeeAddBtn.TabIndex = 11;
@@ -274,7 +280,7 @@
             this.addEmployee_phoneNumber.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addEmployee_phoneNumber.Location = new System.Drawing.Point(423, 19);
             this.addEmployee_phoneNumber.Name = "addEmployee_phoneNumber";
-            this.addEmployee_phoneNumber.Size = new System.Drawing.Size(151, 21);
+            this.addEmployee_phoneNumber.Size = new System.Drawing.Size(205, 21);
             this.addEmployee_phoneNumber.TabIndex = 7;
             // 
             // label5
@@ -298,7 +304,7 @@
             "Female"});
             this.addEmployee_gender.Location = new System.Drawing.Point(125, 93);
             this.addEmployee_gender.Name = "addEmployee_gender";
-            this.addEmployee_gender.Size = new System.Drawing.Size(151, 21);
+            this.addEmployee_gender.Size = new System.Drawing.Size(99, 21);
             this.addEmployee_gender.TabIndex = 5;
             // 
             // label4
@@ -317,7 +323,7 @@
             this.addEmployee_fullName.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addEmployee_fullName.Location = new System.Drawing.Point(125, 55);
             this.addEmployee_fullName.Name = "addEmployee_fullName";
-            this.addEmployee_fullName.Size = new System.Drawing.Size(151, 21);
+            this.addEmployee_fullName.Size = new System.Drawing.Size(188, 21);
             this.addEmployee_fullName.TabIndex = 3;
             // 
             // label3
@@ -336,7 +342,7 @@
             this.addEmployee_id.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addEmployee_id.Location = new System.Drawing.Point(125, 17);
             this.addEmployee_id.Name = "addEmployee_id";
-            this.addEmployee_id.Size = new System.Drawing.Size(151, 21);
+            this.addEmployee_id.Size = new System.Drawing.Size(188, 21);
             this.addEmployee_id.TabIndex = 1;
             // 
             // label2

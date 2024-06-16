@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
+using System.Runtime.CompilerServices;
+using System.Diagnostics.Eventing.Reader;
 
 
 
@@ -26,9 +28,24 @@ namespace EmployeeManagementSystem
             //to display the data from database to the grid view
 
             displayEmployeeData();
+            
         }
 
-        
+        public void RefreshData()
+        {
+            if (InvokeRequired)
+            {
+                Invoke((MethodInvoker)RefreshData);
+                return;
+            }
+            displayEmployeeData();
+           
+        }
+
+        public void ClearGridSelection()
+        {
+            dataGridView1.ClearSelection();
+        }
 
         public void displayEmployeeData()
         {
@@ -37,9 +54,6 @@ namespace EmployeeManagementSystem
 
             dataGridView1.DataSource = listdata;
         }
-
-
-
 
         private void addEmployeeAddBtn_Click(object sender, EventArgs e)
         {
@@ -218,20 +232,29 @@ namespace EmployeeManagementSystem
             addEmployee_position.SelectedIndex = -1;
             addEmployee_status.SelectedIndex = -1;
             addEmployee_picture.Image = null;
+            addEmployee_id.Enabled = true;
+            addEmployeeUpdateBtn.Enabled = false;
+            dataGridView1.ClearSelection();
+
+
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex != -1)
+            if (e.RowIndex >= 0)
             {
+                addEmployeeUpdateBtn.Enabled = true;
+                addEmployee_id.Enabled = false;
                 DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
                 addEmployee_id.Text = row.Cells[1].Value.ToString();
+                
                 addEmployee_fullName.Text = row.Cells[2].Value.ToString();
                 addEmployee_gender.Text = row.Cells[3].Value.ToString();
                 addEmployee_phoneNumber.Text = row.Cells[4].Value.ToString();
                 addEmployee_position.Text = row.Cells[5].Value.ToString();
 
                 string imagePath = row.Cells[6].Value.ToString();
+                
                 if (imagePath != null)
                 {
                     addEmployee_picture.Image = Image.FromFile(imagePath);
@@ -240,10 +263,17 @@ namespace EmployeeManagementSystem
                 {
                     addEmployee_picture.Image = null;
                 }
+            
 
                 addEmployee_status.Text = row.Cells[8].Value.ToString();
-
             }
+            else
+            {   
+                addEmployee_id.Enabled = true;
+                addEmployeeUpdateBtn.Enabled = false;
+            }    
+
+
         }
 
         private void clearFields()
@@ -255,6 +285,8 @@ namespace EmployeeManagementSystem
             addEmployee_position.SelectedIndex = -1;
             addEmployee_status.SelectedIndex = -1;
             addEmployee_picture.Image = null;
+            addEmployeeUpdateBtn.Enabled = false;
+
         }
 
         private void addEmployeeUpdateBtn_Click(object sender, EventArgs e)
@@ -279,6 +311,7 @@ namespace EmployeeManagementSystem
                     {
                         connect.Open();
                         DateTime today = DateTime.Today;
+                        
 
                         string updateData = "UPDATE employees SET full_name = @fullname" +
                             ", gender = @gender, contact_number = @contactNum" +
@@ -296,11 +329,7 @@ namespace EmployeeManagementSystem
                             cmd.Parameters.AddWithValue("@updateDate", today);
                             cmd.Parameters.AddWithValue("@status", addEmployee_status.Text.Trim());
                             cmd.Parameters.AddWithValue("@employeeID", addEmployee_id.Text.Trim());
-                            
 
-
-
-                            
                             cmd.ExecuteNonQuery();
 
                             displayEmployeeData();

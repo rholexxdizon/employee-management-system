@@ -123,6 +123,56 @@ namespace EmployeeManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EMS_Pic {
+            get {
+                object obj = ResourceManager.GetObject("EMS Pic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EMS_Pic_2 {
+            get {
+                object obj = ResourceManager.GetObject("EMS Pic 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EMS_Pic_3 {
+            get {
+                object obj = ResourceManager.GetObject("EMS Pic 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EMS_Pic_3_Enhanced {
+            get {
+                object obj = ResourceManager.GetObject("EMS Pic 3-Enhanced", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EMS_Pic_31 {
+            get {
+                object obj = ResourceManager.GetObject("EMS Pic 31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap inactive_30px {
             get {
                 object obj = ResourceManager.GetObject("inactive_30px", resourceCulture);
@@ -146,6 +196,17 @@ namespace EmployeeManagementSystem.Properties {
         internal static System.Drawing.Bitmap manager {
             get {
                 object obj = ResourceManager.GetObject("manager", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medical_innovation_concept_background_health_care_icons_on_a_blue_background_illustration_vector {
+            get {
+                object obj = ResourceManager.GetObject("medical-innovation-concept-background-health-care-icons-on-a-blue-background-illu" +
+                        "stration-vector", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +244,29 @@ namespace EmployeeManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Rholex_Pic_250x250_Enhanced {
+            get {
+                object obj = ResourceManager.GetObject("Rholex Pic 250x250 Enhanced", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shutdown_30px {
             get {
                 object obj = ResourceManager.GetObject("shutdown_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap teamwork_triumph_a_celebration_of_collaboration_innovation_and_success_vector {
+            get {
+                object obj = ResourceManager.GetObject("teamwork-triumph-a-celebration-of-collaboration-innovation-and-success-vector", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
