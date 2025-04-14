@@ -5,10 +5,10 @@ Based on .NET Framework and C# Winforms. Connected with MSSQL Server.
 You have to create your own database to connect with the Application.
 
 ## Features:
-1.Login
-2.Register
-3.Dashboard
-4.CRUD
+1.Login  
+2.Register  
+3.Dashboard  
+4.CRUD  
 
 ## Screenshots:
 
