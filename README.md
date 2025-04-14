@@ -5,11 +5,10 @@ Based on .NET Framework and C# Winforms. Connected with MSSQL Server.
 You have to create your own database to connect with the Application.
 
 ## Features:
--Login
--Register
--Dashboard
--Add Employee
--Update Employee
+1.Login
+2.Register
+3.Dashboard
+4.CRUD
 
 ## Screenshots:
 
