@@ -4,7 +4,7 @@ Based on .NET Framework and C# Winforms. Connected with MSSQL Server.
 ## Usage
 You have to create your own database to connect with the Application.
 
-##Features:
+## Features:
 -Login
 -Register
 -Dashboard
