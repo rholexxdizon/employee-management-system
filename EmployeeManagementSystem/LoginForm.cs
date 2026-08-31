@@ -15,7 +15,7 @@ namespace EmployeeManagementSystem
     
     public partial class LoginForm : Form
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=RHOLEX-PC\SQLEXPRESS;Initial Catalog=EmployeeManagementSystem;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connect = new SqlConnection(Environment.GetEnvironmentVariable("EMPLOYEE_MANAGEMENT_DB_CONNECTION") ?? throw new InvalidOperationException("EMPLOYEE_MANAGEMENT_DB_CONNECTION must be set before starting the application"));
         public LoginForm()
         {
             InitializeComponent();
